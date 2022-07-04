@@ -9,33 +9,60 @@
 
 </head>
 <body>
-    <h2>Simulador do Financiamento com Sistema de Amortização Constante (SAC)</h2>
-    <input id="textoValor" type="text" placeholder="Valor do Bem"><br>
-    <input id="textoEntrada" type="text" placeholder="Valor da Entrada"><br>
-    <input id="textoTaxaJuros" type="text" placeholder="Taxa de Juros (%)"><br>
-    <input id="textoPrazo" type="text" placeholder="Prazo (em meses)"><br>
-    <button id="botaoCalcular">Calcular</button>
-    <input id="comCarencia" type="checkbox">Com Carência?
-    <select id="listaSuspensa" hidden>
-        <option value="2">2 Meses</option>
-        <option value="3">3 Meses</option>
-        <option value="4">4 Meses</option>
-    </select>
-    <p></p>
-    <table>
-        <thead>
-            <tr>
-                <th>Nº</th>
-                <th>Valor da Parcela</th>
-                <th>Amortização</th>
-                <th>Juros</th>
-                <th>Saldo Devedor</th>
-            </tr>
-        </thead>
-        <tbody id="corpoTabela">
+    <header id="Cabeçalho">
+        <h2 id="Título">Simulador do Financiamento com Sistema de Amortização Constante (SAC)</h2>
 
-        </tbody>
-    </table>
+    </header>
+
+    <main>
+        <form id="Formulário">
+            <input id="textoValor" type="text" placeholder="Valor do Bem"><br>
+            <input id="textoEntrada" type="text" placeholder="Valor da Entrada"><br>
+            <input id="textoTaxaJuros" type="text" placeholder="Taxa de Juros (%)"><br>
+            <input id="textoPrazo" type="text" placeholder="Prazo (em meses)"><br>
+            <button id="botaoCalcular">Calcular</button>
+            <input id="comCarencia" type="checkbox">Com Carência?
+            <select id="listaSuspensa" hidden>
+                <option value="1">1 Mês</option>
+                <option value="2">2 Meses</option>
+                <option value="3">3 Meses</option>
+                <option value="4">4 Meses</option>
+                <option value="5">5 Meses</option>
+                <option value="6">6 Meses</option>
+                <option value="7">7 Meses</option>
+                <option value="8">8 Meses</option>
+                <option value="9">9 Meses</option>
+                <option value="10">10 Meses</option>
+                <option value="11">11 Meses</option>
+                <option value="12">12 Meses</option>
+                <option value="13">13 Meses</option>
+                <option value="14">14 Meses</option>
+                <option value="15">15 Meses</option>
+                <option value="16">16 Meses</option>
+                <option value="17">17 Meses</option>
+                <option value="18">18 Meses</option>
+            </select>
+        </form>
+        <p></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>Valor da Parcela</th>
+                    <th>Amortização</th>
+                    <th>Juros</th>
+                    <th>Saldo Devedor</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela">
+
+            </tbody>
+        </table>
+    </main>
+    <p></p>
+    <footer>
+        <button id="Voltar" href="#Título">Voltar ao Topo</button>
+    </footer>
     <script src="./script.js" type="module"></script>
 </body>
 </html>
